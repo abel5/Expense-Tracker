@@ -9,8 +9,7 @@ const expenseModal=document.querySelector(".expense-modal");
 const incomeCloseBtn=document.querySelector(".i-close-Btn");
 const expenseCloseBtn=document.querySelector(".e-close-Btn");
 
-const totalExpense=document.getElementById("total-expense");
-const totalIncome=document.getElementById("total-income");
+;
 
 const incomeAmount=document.getElementById("income-amount");
 const incomeCategory=document.getElementById("income-category");
