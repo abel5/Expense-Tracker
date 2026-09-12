@@ -47,6 +47,8 @@ incomeCancelBtn.addEventListener("click",()=>hidde(incomeModal));
 expenseCancelBtn.addEventListener("click",()=>hidde(expenseModal));
 
 
+
+
 window.addEventListener("click", (e) => {
 
     // close income modal if clicking outside
