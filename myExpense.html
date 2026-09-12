@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myexpense.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <script src="myExpense.js" defer></script>
+</head>
+
+<body>
+    <header class=" header-container">
+        <h3 class="header-title">Good Morning, Abel</h3>
+        <div class="dropdown">
+            <button class="period-change icon">
+                Daily<span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                </span>
+            </button>
+
+            <button class="calendar icon">
+                <span class="material-symbols-outlined">
+                    calendar_month
+                </span>21 jun 2026
+            </button>
+
+            <button class="export icon">
+                <span class="material-symbols-outlined">
+                    download_2
+                </span>Export
+            </button>
+
+        </div>
+
+    </header>
+
+    <main class="main-contents">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Monthly Income</h3>
+                <button class="card-menu">
+                    <span class="material-symbols-outlined">
+                        more_horiz
+                    </span>
+                </button>
+            </div>
+            <div class="card-body">
+                <h1 id="total-income" class="amount">$23,345.00</h1>
+                <div class="increase-percentage">
+                    <span class="material-symbols-outlined">
+                        north
+                    </span>12% vs Last month
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Monthly Expense</h3>
+                <button class="card-menu">
+                    <span class="material-symbols-outlined">
+                        more_horiz
+                    </span>
+                </button>
+            </div>
+            <div class="card-body">
+                <h1 id="total-expense" class="amount">$4,345.00</h1>
+                <div class="increase-percentage">
+                    <span class="material-symbols-outlined">
+                        north
+                    </span>12% vs Last month
+                </div>
+            </div>
+        </div>
+        <div class="my-card card">
+            <div class="card-header">
+                <h3 class="card-title">My Card</h3>
+                <button class="card-menu">
+                    <span class="material-symbols-outlined">
+                        more_horiz
+                    </span>
+                </button>
+            </div>
+            <div class="card-body">
+                <div class="body-contents">
+                    <p class="regular-text">Linked to your primary wallet</p>
+
+                    <div class="card-chip"></div>
+                    <h2 class="id-number">1845 2368 9235 4823</h2>
+                    <div class="your-name">Abel Birhanu</div>
+                    <div class="spending-limit">Spending Limit</div>
+                    <h2 class="limit-amount amount">$2,345.00</h2>
+                    <h5 class="used amount">used from $76,236.00</h5>
+                    <div class="progress-bar">
+                      <div class="progress-fill"></div>
+                    </div>
+                    <div class="card-symbol">
+                        <div class="circle red-circle"></div>
+                        <div class="circle green-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chart-bar-section">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Overview</h3>
+                    <div class="dropdown">
+                        <button class="period-change icon">
+                            Yearly<span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </button>
+
+                        <button class="period-change icon">
+                            <span class="material-symbols-outlined">
+                                filter_alt
+                            </span>Filter
+                        </button>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-bars">
+                        <span class="chart-bar" style="width: 40px; height: 80px;"></span>
+                        <span class="chart-bar" style="width: 40px; height: 100px;"></span>
+                        <span class="chart-bar" style="width: 40px; height: 120px;"></span>
+                        <span class="chart-bar" style="width: 40px; height: 50px;"></span>
+                        <span class="chart-bar active" style="width: 40px; height: 200px; position: relative;">
+                            <div class="red" style="height: 100px;"></div>
+                            <div class="green" style="height: 100px;"></div>
+                            <div class="details">
+                                <div class="date">April 2026</div>
+                                <div class="income" style="color: rgb(3, 80, 244);">Income:$894</div>
+                                <div class="expense" style="color: rosybrown;">Expenses:$768</div>
+                            </div>
+                        </span>
+                        <span class="chart-bar" style="width: 40px; height: 60px;"></span>
+                        <span class="chart-bar" style="width: 40px; height: 70px;"></span>
+                        <span class="chart-bar" style="width: 40px; height: 90px;"></span>
+                        <span class="chart-bar" style="width: 40px; height: 300px;"></span>
+                        <span class="chart-bar" style="width: 40px; height: 80px;"></span>
+                        <span class="chart-bar" style="width: 40px; height: 100px;"></span>
+                    </div>
+
+                </div>
+                <div class="label-container">
+                    <label class="months">
+                        <span>Feb</span>
+                        <span>Mar</span>
+                        <span>Apr</span>
+                        <span>Mei</span>
+                        <span>Jun</span>
+                        <span>Jul</span>
+                        <span>Aug</span>
+                        <span>Sep</span>
+                        <span>Oct</span>
+                        <span>Nov</span>
+                        <span>Des</span>
+                    </label>
+                </div>
+            </div>
+            <div class="all-expense card">
+                <div class="card-header">
+                    <div class="card-title">All Expenses</div>
+                    <button class="card-menu">
+                        <span class="material-symbols-outlined">
+                            more_horiz
+                        </span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <p class="regular-text" style="margin-bottom: 1rem;">Spending breakdown by category</p>
+                    <h1 class="all-expense-amount amount">$75,123.00</h1>
+
+                    <div class="period">
+                        <div class="regular-text">Daily</div>
+                        <div class="regular-text">Weekly</div>
+                        <div class="month " style="font-weight: 700;">Monthly</div>
+                    </div>
+                    <div class="period1">
+                        <div class="regular-text">Daily</div>
+                        <div class="regular-text">Weekly</div>
+                        <div class="regular-text ">Monthly</div>
+                    </div>
+
+                    <div class="period-amount">
+                        <div class="daily">$3,34.00</div>
+                        <div class="weekly">$2,45.00</div>
+                        <div class="monthly">$54,567.00</div>
+                    </div>
+                    <div class="color-bar"></div>
+
+                    <ul class="categories">
+                        <div class="category">
+                            <div class="dots">
+                                <div class="dot dot1"></div>
+                                <h4 class="regular-text">Food&Health</h4>
+                            </div>
+                            <div class="amountes regular-text">876</div>
+
+                        </div>
+
+                        <div class="category">
+                            <div class="dots">
+                                <div class="dot dot2"></div>
+                                <h4 class="regular-text">Shopping</h4>
+                            </div>
+                            <div class="amountes regular-text">276</div>
+
+                        </div>
+
+                        <div class="category">
+                            <div class="dots">
+                                <div class="dot dot3"></div>
+                                <h4 class="regular-text">Entertainment</h4>
+                            </div>
+                            <div class="amountes regular-text">653</div>
+
+                        </div>
+
+                        <div class="category">
+                            <div class="dots">
+                                <div class="dot dot4"></div>
+                                <h4 class="regular-text">Investment</h4>
+                            </div>
+                            <div class="amountes regular-text">968</div>
+
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-Container card">
+            <div class="card-header">
+                <div class="card-title">Recent Transactions</div>
+                <div class="dropdown">
+                    <button class="period-change icon">
+                        <span class="material-symbols-outlined">
+                            unfold_more
+                        </span>Short
+                    </button>
+
+                    <button class="short-change icon">
+                        <span class="material-symbols-outlined">
+                            filter_alt
+                        </span>Filter
+                    </button>
+                </div>
+            </div>
+            <table class="table transactions-table">
+                <thead>
+                    <tr>
+                        
+                        <th >Date <span class="material-symbols-outlined">
+                                unfold_more
+                            </span></th>
+                            
+                        <th>Category <span class="material-symbols-outlined">
+                                unfold_more
+                            </span></th>
+                           
+                        <th>Amount <span class="material-symbols-outlined">
+                                unfold_more
+                            </span></th>
+                           
+                        <th>Status <span class="material-symbols-outlined">
+                                unfold_more
+                            </span></th>
+                         
+                        <th>Action <span class="material-symbols-outlined">
+                                unfold_more
+                            </span></th>
+                           
+                    </tr>
+                </thead>
+                <tbody id="transaction-table">
+                    <tr>
+                        <td class="t-date regular-text">Jan 14 2026</td>
+                        <td class="tsubscription regular-text">Subscription</td>
+                        <td class="t-amount regular-text">266</td>
+                        <td > <span class="t-success">Success</span></td>
+                        <td class="card-menu regular-text"><span class="material-symbols-outlined">
+                                more_horiz
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td class="t-date regular-text">Jan 15 2026</td>
+                        <td class="tsubscription regular-text">Subscription</td>
+                        <td class="t-amount regular-text">276</td>
+                        <td ><span class="t-success">Success</span></td>
+                        <td class="card-menu regular-text"><span class="material-symbols-outlined">
+                                more_horiz
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td class="t-date regular-text">Jan 16 2026</td>
+                        <td class="tsubscription regular-text">Subscription</td>
+                        <td class="t-amount regular-text">576</td>
+                        <td ><span class="t-success">Success</span></td>
+                        <td class="card-menu regular-text"><span class="material-symbols-outlined">
+                                more_horiz
+                            </span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="add-btns">
+            <button id="add-income">+</button>
+            <button id="add-expense">-</button>
+        </div>
+
+        <div class="income-modal modal">
+            <div class="modal-containte">
+             <div class="modal-header">
+                <div class="modal-title">Add Income</div>
+                <button class="i-close-Btn">&times;</button>
+             </div>
+             <div class="modal-body">
+                <form class="income-form" autocomplete="off">
+                    <div class="form-group">
+                        <label class="form-label">Amount</label>
+                        <input type="number" id="income-amount" class="form-input" placeholder="enter amount" required >
+
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Category</label>
+                        <select class="form-select" id="income-category" required>
+                            <option value="" >Select Category</option>
+                            <option value="boxing">Boxing</option>
+                            <option value="freelance">Freelance</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label class="form-label">Description</label>
+                        <input type="text" id="income-description" class="form-input" placeholder="enter description" required >
+
+                    </div>
+                     <div class="form-group">
+                        <label class="form-label">Date</label>
+                        <input type="date" class="form-input" id="income-date">
+                    </div>
+                </form>
+             <div class="modal-footer">
+                <button class="modal-btn cancel-btn" id="incomeCancelBtn">Cancel</button>
+                <button class="modal-btn add-btn" id="incomeAddBtn">Add Income</button>
+             </div>
+
+             </div>
+
+
+            </div>
+        </div>
+
+         <div class="expense-modal modal">
+            <div class="modal-containte">
+             <div class="modal-header">
+                <div class="modal-title">ADD Expense</div>
+                <button class="e-close-Btn">&times;</button>
+             </div>
+             <div class="modal-body">
+                <form class="expense-form" autocomplete="off">
+                    <div class="form-group">
+                        <label class="form-label">Amount</label>
+                        <input type="number" id="expense-amount" class="form-input" placeholder="enter amount" required >
+
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Category</label>
+                        <select class="form-select" id="expense-category" required>
+                            <option value="" >Select Category</option>
+                            <option value="food">Food</option>
+                            <option value="ps">Ps</option>
+                            <option value="gym">Gym</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label class="form-label">Description</label>
+                        <input type="text" id="expense-description" class="form-input" placeholder="enter description" required >
+
+                    </div>
+                     <div class="form-group">
+                        <label class="form-label">Date</label>
+                        <input type="date" class="form-input" id="expense-date">
+                    </div>
+                </form>
+             <div class="modal-footer">
+                <button class="modal-btn cancel-btn" id="expenseCancelBtn">Cancel</button>
+                <button class="modal-btn add-btn" id="expenseAddBtn">Add Expense</button>
+             </div>
+
+             </div>
+
+
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
