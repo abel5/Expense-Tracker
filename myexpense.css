@@ -16,9 +16,7 @@ body{
    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.16); 
    padding: 1rem;
    transition: 0.3s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  
 }
 .header-title{
     font-weight: 700;
