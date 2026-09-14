@@ -9,10 +9,7 @@
 }
 
 
-.header-title{
-    font-weight: 700;
-    color: rgb(35, 34, 34);
-}
+
 .dropdown{
     display: flex;
     gap: 1rem;
