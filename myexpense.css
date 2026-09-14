@@ -25,7 +25,7 @@ body{
     color: rgb(35, 34, 34);
 }
 .dropdown{
-    display: flex;
+    display: grid;
     gap: 1rem;
 }
 .icon{
