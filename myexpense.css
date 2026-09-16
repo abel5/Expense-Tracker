@@ -23,7 +23,7 @@ body{
 }
 .header-title{
     font-weight: 700;
-    color: rgb(35, 34, 34);
+    color: blue;
 }
 .dropdown{
     display: flex;
