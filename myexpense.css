@@ -26,6 +26,11 @@ body{
     color: rgb(35, 34, 34);
 }
 
+
+.dropdown{
+    display: flex;
+    gap: 1rem;
+}
 .icon{
     display: flex;
     align-items: center;
