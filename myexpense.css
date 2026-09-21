@@ -25,7 +25,11 @@ body{
     font-weight: 600;
     color: rgb(35, 34, 34);
 }
-
+.dropdown{
+    display: flex;
+    align-items: left;
+    gap: 1rem;
+}
 
 
 .icon{
