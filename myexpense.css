@@ -22,16 +22,16 @@ body{
     align-items: center;
 }
 .header-title{
-    font-weight: 700;
+    font-weight: 600;
     color: rgb(35, 34, 34);
 }
-
-
 .dropdown{
     display: flex;
-    align-items: center;
+    align-items: left;
     gap: 1rem;
 }
+
+
 .icon{
     display: flex;
     align-items: center;
